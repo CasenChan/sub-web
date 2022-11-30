@@ -89,7 +89,7 @@
                         <el-checkbox v-model="form.udp" @change="needUdp = true" label="启用 UDP"></el-checkbox>
                       </el-row>
                       <el-row>
-                        <el-checkbox v-model="form.tfo" label="启用 TFO"></el-checkbox>
+                        <el-checkbox v-model="form.tfo" label="启用 TCP Fast Open"></el-checkbox>
                       </el-row>
                       <el-row>
                         <el-checkbox v-model="form.appendType" label="节点类型"></el-checkbox>
@@ -299,7 +299,7 @@ export default {
           ClashR: "clashr",
           Surge2: "surge&ver=2",
         },
-        backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
+        backendOptions: [{ value: "https://subapi.casen.cc/sub?" }],
         remoteConfig: [
           {
             label: "universal",
