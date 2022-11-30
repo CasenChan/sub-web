@@ -89,6 +89,9 @@
                         <el-checkbox v-model="form.udp" @change="needUdp = true" label="启用 UDP"></el-checkbox>
                       </el-row>
                       <el-row>
+                        <el-checkbox v-model="form.tfo" label="启用 TCP Fast Open"></el-checkbox>
+                      </el-row>
+                      <el-row>
                         <el-checkbox v-model="form.appendType" label="节点类型"></el-checkbox>
                       </el-row>
                       <el-row>
